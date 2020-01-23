@@ -43,7 +43,7 @@ sh docker-build-push.sh
 sh start-driver-pod.sh
 ```
 
-9. (In another shell) Expose driver service for access via Jupyter notebook
+9. (In another shell) Expose driver service for access via Jupyter notebook. Scripts for starting Jupyter are included in Spark driver image
 ```bash
 sh expose-driver.sh
 ```
