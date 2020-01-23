@@ -28,7 +28,7 @@ gcloud-create-kub-cluster.sh
 kubectl create -f spark-rbac.yaml
 ```
 
-6. Create GCS bucket, create secret for bucket access, and provide access to GKE cluster
+6. Create GCS bucket, create secret for bucket access, and provide access to GKE cluster (Note: This just be run prior to building/pushing Docker images because this step will distribute the GCS secret json file to all of the relevant images)
 ```bash
 sh create-gcs.sh
 ```
