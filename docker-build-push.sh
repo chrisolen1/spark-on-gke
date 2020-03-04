@@ -1,3 +1,5 @@
+gcloud auth configure-docker -q
+
 cd containers/spark-master
 echo $PWD
 docker build -t ${DRIVER_IMAGE} .

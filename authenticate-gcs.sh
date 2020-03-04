@@ -3,7 +3,7 @@ echo $SA_EMAIL
 
 sleep 5
 
-gcloud projects add-iam-policy-binding $PROJECT_NAME --member serviceAccount:$SA_EMAIL --role roles/storage.admin
+gcloud projects add-iam-policy-binding $PROJECT_ID --member serviceAccount:$SA_EMAIL --role roles/storage.admin
 
 gcloud iam service-accounts keys create sarc-bucket-sa.json --iam-account $SA_EMAIL
 

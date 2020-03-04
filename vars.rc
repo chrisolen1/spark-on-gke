@@ -1,15 +1,19 @@
 ### Set up environmental variables ###
 
-export PROJECT_NAME=sarc-1234
+export PROJECT_NAME=sarcasm
+export PROJECT_ID=sarcasm-2wx3ce6drvftuy # project_id needs to be updated here for new projects
 export CLUSTER_NAME=sarc-cluster
-export BUCKET_NAME=sarc-bucket
+
+export BUCKET_NAME=sarc-bucket-2wx3ce6drvftuy # project_id needs to be updated here for new projects
 export BUCKET_SA=sarc-bucket-sa
+
 export REGION=us-central1
 export ZONE=us-central1-a
+
 export MASTER_MCHN_TYPE=n1-highmem-2
-export NUM_MASTERS=1
 export WORKER_MCHN_TYPE=n1-highmem-2
-export NUM_WORKERS=3
+export NUM_NODES=5
+export MAX_AUTOSCALE_NODES=20
 
 export PYTHON_VERSION=3.7
 export SPARK_VERSION=2.4.4
@@ -18,7 +22,7 @@ export HADOOP_VERSION=2.7
 export SPARK_NAMESPACE=spark
 export DRIVER_POD_SA=driver-pod-sa
 export SPARK_DRIVER_SA=spark-driver-sa
-export DRIVER_IMAGE=gcr.io/sarc-1234/spark-v2.4.4-master:latest
-export WORKER_IMAGE=gcr.io/sarc-1234/spark-v2.4.4-worker:latest
+export DRIVER_IMAGE=gcr.io/sarcasm-2wx3ce6drvftuy/spark-v2.4.4-master:latest # project_id needs to be updated here for new projects
+export WORKER_IMAGE=gcr.io/sarcasm-2wx3ce6drvftuy/spark-v2.4.4-worker:latest # project_id needs to be updated here for new projects
 export DRIVER_NAME=spark-driver
 export DRIVER_PORT=29413

@@ -1,4 +1,4 @@
-gsutil mb -l $REGION -p $PROJECT_NAME gs://${BUCKET_NAME}/ 
+gsutil mb -l $REGION -p $PROJECT_ID gs://${BUCKET_NAME}/ 
 
 sleep 5
 
