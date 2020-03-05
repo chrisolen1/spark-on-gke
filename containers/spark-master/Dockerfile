@@ -35,7 +35,7 @@ RUN add-apt-repository ppa:deadsnakes/ppa && \
     apt-get update && apt-get install -y python$PYTHON_VERSION python3-pip && \
     python3.7 -m pip install -r /requirements.yaml
 COPY start-jupyter.sh /
-COPY data-cleaning.ipynb /
+COPY *.ipynb /
 
 # GCS configs
 RUN rm $SPARK_HOME/jars/guava-14.0.1.jar
