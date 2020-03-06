@@ -1,7 +1,7 @@
-sh spark-on-gke/create-gke-cluster.sh
+sh create-gke-cluster.sh
 
-kubectl create -f spark-on-gke/spark-rbac.yaml
+kubectl create -f spark-rbac.yaml
 
-sh spark-on-gke/authenticate-gcs.sh
+sh authenticate-gcs.sh
 
-sh spark-on-gke/start-driver-pod.sh
+sh start-driver-pod.sh

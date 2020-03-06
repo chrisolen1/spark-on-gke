@@ -14,7 +14,7 @@ ENV DRIVER_PORT=29413
 ENV SPARK_HOME=/opt/spark
 
 # Linux and Kubernetes dependencies
-RUN apt-get update && apt-get install -y software-properties-common apt-transport-https apt-utils && \
+RUN apt-get update && apt-get install -y software-properties-common apt-transport-https apt-utils git && \
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
     echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | tee -a /etc/apt/sources.list.d/kubernetes.list
      

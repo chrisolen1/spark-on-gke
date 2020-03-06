@@ -8,4 +8,4 @@ matplotlib
 pyspark==2.4.4
 tini
 sockets
-
+shapely
