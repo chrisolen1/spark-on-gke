@@ -1,5 +1,3 @@
-gcloud init
-
 cd ../containers/spark-master
 echo $PWD
 sudo docker build -t ${DRIVER_IMAGE} .

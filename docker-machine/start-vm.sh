@@ -3,4 +3,5 @@ gcloud compute instances create docker-machine \
 	--image-project debian-cloud \
         --image-family=debian-9 \
         --machine-type=n1-standard-4 \
-        --boot-disk-size=50GB 
+        --boot-disk-size=50GB \
+	--service-account docker-sa@$PROJECT_ID.iam.gserviceaccount.com 

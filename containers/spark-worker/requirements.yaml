@@ -8,4 +8,6 @@ matplotlib
 pyspark==2.4.4
 tini
 sockets
-
+sentencepiece
+tensorflow_hub
+bert-for-tf2
